@@ -9,9 +9,20 @@
 		<title>Magnus Akselvoll</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+
+		<!-- Section Nav Dots -->
+			<nav id="section-nav">
+				<ul>
+					<li><a href="#header" class="scrolly" data-section="header"><span>Home</span></a></li>
+					<li><a href="#one" class="scrolly" data-section="one"><span>Who I am</span></a></li>
+					<li><a href="#two" class="scrolly" data-section="two"><span>Stuff I do</span></a></li>
+					<li><a href="#three" class="scrolly" data-section="three"><span>Contact</span></a></li>
+				</ul>
+			</nav>
 
 		<!-- Header -->
 			<section id="header">
@@ -19,11 +30,7 @@
 					<h1>Highlights</h1>
 					<p>Magnus Akselvoll, MSc in Computer Science, Norwegian engineer based in Málaga</p>
 				</header>
-				<div class="container">
-					<ul class="actions special">
-						<li><a href="#one" class="button primary scrolly">Begin</a></li>
-					</ul>
-				</div>
+				<a href="#one" class="goto-next scrolly">Next</a>
 			</section>
 
 		<!-- One -->
@@ -34,14 +41,21 @@
 						<header class="major">
 							<h2>Who I am</h2>
 						</header>
+						<a href="#" class="image avatar" id="avatar-trigger"><img src="images/portrait.jpg" alt="Magnus Akselvoll" /></a>
+						<div id="avatar-lightbox">
+							<img src="images/portrait.jpg" alt="Magnus Akselvoll" />
+						</div>
 						<p>
-							I am a Computer Engineer with a Masters degree in Computer Science from NTNU in Norway. I have lived and worked for more than 20 years in Málaga, Spain.
+							I am a Computer Engineer with a Masters degree in Computer Science from NTNU in Norway. I have lived and worked for more than 20 years in Málaga, Spain. I speak Norwegian, Spanish and English.
 						</p>
 						<p>
 							I mainly work as a back-end developer, with special expertize from building SaaS applications and integrations, based on the .net and SQL Server platforms.
 						</p>
 						<p>
 							I have extensive experience from establishing and managing branch offices and software teams in Spain.
+						</p>
+						<p>
+							I work as a Senior Consultant at <a href="https://oktett.no">Oktett</a>.
 						</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
@@ -56,7 +70,8 @@
 						<header class="major">
 							<h2>Stuff I do</h2>
 						</header>
-						<p>I like to focus on the entire software process and the needs of each project. However, I hold special expertise in the following</p>
+						<p>I focus on back-end development, integration and infrastructure, working primarily with .NET/C#, SQL Server, Azure and Terraform.</p>
+						<p>My experience spans the entire software process, with particular focus on the following</p>
 						<ul class="icons-grid">
 							<li>
 								<span class="icon solid major fa-city"></span>
@@ -437,7 +452,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<ul class="icons">
 						<li><a href="mailto:contact@akselvoll.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 						<li><a href="https://www.linkedin.com/in/magnusakselvoll" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://twitter.com/magnusak" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/magnusakselvoll" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.instagram.com/magnus.akselvoll" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://www.facebook.com/magnus.akselvoll" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					</ul>
@@ -446,6 +461,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</ul>
 				</footer>
 			</section>
+
+		<!-- Unhelpful Chat Widget -->
+			<div id="chat-widget">
+				<div id="chat-bubble" class="pulse">
+					<span class="icon solid fa-comment-dots"></span>
+				</div>
+				<div id="chat-window">
+					<div id="chat-header">
+						<span class="chat-title">MagnusBot 3000</span>
+						<span id="chat-close">&times;</span>
+					</div>
+					<div id="chat-messages">
+						<div class="chat-message bot">Hi! I'm an AI assistant. I'm here to help! (I'm not.)</div>
+					</div>
+					<div id="chat-input-area">
+						<input type="text" id="chat-input" placeholder="Type something..." />
+						<button id="chat-send"><span class="icon solid fa-paper-plane"></span></button>
+					</div>
+				</div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
