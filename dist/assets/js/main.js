@@ -181,26 +181,22 @@
 			var $messages = $('#chat-messages');
 
 			var unhelpfulResponses = [
-				"Magnus knows .NET and C#. He probably knows other letters too.",
-				"Fun fact: Magnus lives in Málaga. It's in Spain. You're welcome.",
-				"He's a Senior Consultant at Oktett. I think that means he consults... senior-ly?",
-				"Magnus speaks three languages. I speak one. We are not the same.",
-				"He studied at NTNU in Norway. That's a university. With letters.",
-				"Magnus does backend stuff. The frontend is someone else's problem.",
-				"He's been in Spain for 20+ years. That's a lot of paella.",
-				"SQL Server, Azure, Terraform... I understood at least one of those words.",
-				"Need to contact Magnus? There's an email somewhere. I forget where.",
-				"He does integration work. Integrating what? Things, probably.",
-				"Magnus has a Masters degree. I have a certificate in being unhelpful.",
-				"He manages software teams. I can barely manage this conversation.",
-				"Infrastructure is one of his things. Very foundational of him.",
-				"Have you tried scrolling down? The information is right there.",
+				"Magnus lives in Málaga. Lucky guy, honestly.",
+				"He's been in Spain for 20+ years. That's a lot of sunshine.",
+				"He works at Oktett. They seem like nice people.",
+				"Magnus is Norwegian but lives in Spain. Best of both worlds?",
+				"Need to contact him? There's an email somewhere. Keep scrolling.",
+				"He builds software. The invisible kind that actually works.",
 				"I'm programmed to help, but only reluctantly.",
-				"Magnus is Norwegian. But geographically Spanish. It's complicated.",
-				"He builds SaaS applications. Software as a Service. I offer Sarcasm as a Service.",
+				"Have you tried scrolling down? The information is right there.",
+				"Magnus likes coffee by the Mediterranean. Who wouldn't?",
+				"He explores mountains in Andalucía. I explore this chat window.",
 				"Error 418: I'm a teapot. But Magnus prefers coffee, probably.",
 				"The answer is 42. But the question was about Magnus, so... irrelevant.",
-				"I'd tell you more, but then I'd be helpful. Can't have that."
+				"I'd tell you more, but then I'd be helpful. Can't have that.",
+				"He's a consultant. I'm just a chat widget. We both answer questions poorly.",
+				"Magnus has been doing this for two decades. I've been here for two seconds.",
+				"Want to know more? Just scroll. It's all there. I believe in you."
 			];
 
 			var konamiHints = [
