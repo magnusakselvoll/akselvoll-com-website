@@ -34,6 +34,9 @@
 				$body.wrapInner('<div id="wrapper" />');
 				$wrapper = $('#wrapper');
 
+				// Keep fixed elements out of the wrapper: its transform would make them scroll with the page.
+					$('#chat-widget, #section-nav').appendTo($body);
+
 				// Hack: iOS vh bug.
 					if (browser.os == 'ios')
 						$wrapper
