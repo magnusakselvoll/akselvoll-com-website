@@ -12,7 +12,8 @@ Everything served is in `dist/`, and there is no build step: edit the files ther
   edited directly
 - `assets/js/main.js`: scrolling, navigation dots, the avatar lightbox and the chat widget
 - `images/`: photos. Keep them at most about 1920 px wide and compressed (JPEG quality around 78)
-- `_headers`: response headers for Cloudflare Pages (security headers, caching). If the page starts
+- `_headers`: security headers for Cloudflare Pages. Don't add long `Cache-Control` rules: the file
+  names aren't hashed, so browsers would keep serving old CSS and JS after an edit. If the page starts
   loading anything from a new origin, add it to the `Content-Security-Policy` there
 - `404.html`: served by Pages for any unknown path
 
