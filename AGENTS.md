@@ -44,8 +44,10 @@ Always use GitHub Flow when working on issues:
    - Pass `--title` and `--body` as plain strings to `gh pr create` — no heredocs, command
      substitution or backticks
    - Always pass `--head <branch-name> --base main`
-   - Pushing a branch creates a Pages preview deployment; check it before merging, since merging
-     to `main` deploys to production
+   - Pushing a branch creates a public Pages preview deployment at
+     `https://<branch-name>.akselvoll-com-website.pages.dev`. Put that link in the PR body, and give
+     it to the user whenever reporting a pushed change. Check it before merging, since merging to
+     `main` deploys to production
 
 4. **Merge** after review (squash merge preferred)
 
